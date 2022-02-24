@@ -26,7 +26,7 @@
     <form action="/update_venue/<%= @the_venue.id %>">
       <label for="browser_venue">Address</label>
       <input id="browser_venue" type="text" name="query_address" value="<%= @the_venue.address %>" placeholder="Enter an address...">
-      
+ 
       <label for="browser_name">Name</label>
       <input id="browser_name" type="text" name="query_name" value="<%= @the_venue.name %>" placeholder="Enter a name...">
       
@@ -39,7 +39,7 @@
 
   <dt>Delete venue</dt>
   <dd>
-    <a href="/delete_venue/<% @the_venue.id %>">
+    <a href="/delete_venue/<%= @the_venue.id %>">
       Delete this venue
     </a>
   </dd>
